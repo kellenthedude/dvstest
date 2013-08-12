@@ -1,0 +1,375 @@
+body,html {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #EEE;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.data-output-wrap {
+	float: left;
+	margin-left: 30px;
+	width: 55%;
+}
+
+.data-output-wrap table thead,
+.data-output-wrap table tfoot {
+	font-weight: bold;
+}
+
+.page-wrap {
+	width: 90%;
+	padding: 20px;
+	margin: 0px auto;
+	background: #FFF;
+	margin-top: 20px;
+}
+
+h3 {
+	margin-bottom: 0px;
+}
+
+.sidebar {
+	float: left;
+	width: 675px;
+}
+
+.clear {
+	clear: both;
+}
+
+.input-wrap {
+	float: left;
+	padding: 0px 8px;
+}
+
+.input-wrap label,
+.input-wrap select {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
+
+.node-wrap {
+	display: block;
+	clear: both;
+}
+
+.add-node {
+	cursor: pointer;
+	cursor: hand;
+	display: block;
+	clear: both;
+}
+
+.add-node.hidden {
+	display: none;
+}
+
+.cancel-add-node {
+	cursor: pointer;
+	cursor: hand;
+	display: block;
+	padding-left: 8px;
+	clear: both;
+	padding-top: 5px;
+	font-size: 14px;
+}
+
+.node-wrap.channel-added .cancel-add-node {
+	display: none;
+}
+
+.node-wrap {
+	background: #EDEAB7;
+	padding: 7px 10px;
+	margin-bottom: 8px;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.node-wrap.channel-added {
+	background: #EEE;
+	display: block !important;
+}
+
+.node-wrap.channel-added label {
+	color: #AAA;
+}
+
+.node-wrap.channel-added.active {
+	background: #BFE3C4;
+}
+
+.node-wrap.channel-added.active label {
+	color: #222;
+}
+
+.node-wrap.channel-added.hidden {
+	display: none !important;
+}
+
+.node-wrap h5 {
+	padding: 0;
+	margin: 0;
+	padding-left: 8px;
+	padding-bottom: 4px;
+}
+
+.node-wrap.channel-added h5 {
+	display: none;
+}
+
+.custom-wrap,
+.active-wrap {
+	float: right;
+}
+
+.node-wrap select,
+.node-wrap input {
+	font-size: 17px;
+}
+
+.node-wrap input {
+	width: 200px;
+}
+
+.node-wrap label {
+	font-size: 12px;
+}
+
+.prod_list {
+	width: 250px;
+}
+
+.label_list {
+	width: 100px;
+}
+
+.cancel-delete-node {
+	display: none;
+}
+
+.channel-added .cancel-delete-node {
+	display: none;
+	clear: both;
+	font-size: 13px;
+	padding-top: 3px;
+	padding-left: 7px;
+	
+	cursor: hand;
+	cursor: pointer;
+}
+
+.show-remove .cancel-delete-node {
+	/* display: none; */
+}
+
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+   /* For mobile, it's typically better to position checkbox on top of clickable
+      area and turn opacity to 0 instead. */
+}
+
+.important-wrap input[type=checkbox] {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.node-wrap .important-wrap label {
+	width: 14px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.active-wrap label {
+	padding: 15px 8px;
+	/* border: 5px solid #888; */
+	background: #DDD;
+	cursor: pointer;
+	font-weight: bold;
+	line-height: 14px;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.active-wrap label:hover {
+	/* border: 5px solid #999; */
+	background: #E6E6E6;
+}
+
+.node-wrap.active .active-wrap label {
+	background: #84E89C;
+	/* border: 5px solid #32593B; */
+}
+
+.node-wrap.active .active-wrap label:hover {
+	background: #9FEDB1;
+	/* border-color: #41694A; */
+}
+
+.custom-wrap label {
+	padding: 15px 8px;
+	/* border: 5px solid #888; */
+	background: #DDD;
+	font-weight: bold;
+	cursor: pointer;
+	line-height: 14px;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.custom-wrap label:hover {
+	background: #EEE;
+	/* border-color: #5C4649; */
+}
+
+.node-wrap.channel-added .custom-wrap label:hover {
+	background: #DDD;
+}
+
+.node-wrap .custom-wrap label {
+	cursor: auto;
+	width: 60px;
+	text-align: center;
+	padding: 8px 8px;
+}
+
+.node-wrap.active .custom-wrap label,
+.node-wrap.adding .custom-wrap label {
+	background: #BBB;
+	color: #555;
+	/* border: 5px solid #888;	*/
+	cursor: pointer;
+}
+
+.node-wrap.active .custom-wrap label:hover,
+.node-wrap.adding .custom-wrap label:hover {
+	background: #CCC;
+	/* border-color: #999;	 */
+}
+
+.node-wrap.active .custom-wrap.active label,
+.node-wrap.adding .custom-wrap.active label {
+	background: #CF99A0;
+	/* border: 5px solid #423234; */
+	color: #52000F;
+}
+
+.node-wrap.active .custom-wrap.active label:hover,
+.node-wrap.adding .custom-wrap.active label:hover {
+	background: #E0B4BA;
+	/* border-color: #5C4649; */
+}
+
+.node-wrap .active-wrap label.activate {
+	background: #DE2F4F;
+	color: #FFF;
+	font-size: 15px;
+}
+
+.node-wrap .active-wrap label.activate:hover {
+	background: #E04C67;
+}
+
+.hide-inactive-wrap label {
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 10px 8px;
+	background: #DDD;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.hide-inactive-wrap label:hover {
+	background: #E6E6E6;
+}
+
+.hide-inactive-wrap.active label {
+	background: #CF99A0;
+}
+
+.hide-inactive-wrap.active label:hover {
+	background: #E0B4BA;
+}
+
+.hide-inactive-wrap {
+	float: right;
+	margin-top: -40px;
+}
+
+#output-table {
+	overflow-x: scroll;
+}
+
+#output-key-table {
+	float: left;
+}
+
+#output-table table,
+#output-key-table table {
+	border: 1px solid #CCC;
+	border-spacing: 0px;
+}
+
+#output-table table {
+	border-left: 0px;
+}
+
+#output-key-table table {
+	border-right: 0;
+}
+
+#output-table table td.active {
+	background: #BFE3C4;
+}
+
+#output-table table td.active.important {
+	background: #FFFD8C;
+}
+
+#output-table table td.active.duplicate {
+	background: #EB1313;
+}
+
+#output-table td,
+#output-key-table td {
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	padding: 3px;
+	font-size: 13px;
+}
+
+h3 .conflict {
+	color: #EB1313;
+}
+
+.filters h5 {
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+.filters label {
+	font-size: 13px;
+}
